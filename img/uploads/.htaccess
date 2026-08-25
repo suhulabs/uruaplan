@@ -1,0 +1,41 @@
+# ===========================================================================
+#  CARPETA DE IMÁGENES SUBIDAS DESDE EL PANEL
+# ===========================================================================
+#  Los archivos de aquí SÍ deben verse públicamente (son las fotos del sitio),
+#  pero bajo ninguna circunstancia deben ejecutarse. El panel ya valida el
+#  MIME real y renombra todo, esto es la red de seguridad por si algo fallara.
+# ===========================================================================
+
+# --- Nada con pinta de script se sirve ni se ejecuta ---
+<FilesMatch "\.(?i:php|php[0-9]?|phps|phtml|phar|inc|pl|py|jsp|asp|aspx|cgi|sh|bash|htaccess|htpasswd)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# --- Desactiva cualquier handler de PHP heredado del servidor ---
+RemoveHandler .php .php3 .php4 .php5 .php7 .php8 .phtml .phar
+RemoveType .php .php3 .php4 .php5 .php7 .php8 .phtml .phar
+
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php7.c>
+    php_flag engine off
+</IfModule>
+
+# No listar la carpeta.
+Options -Indexes
+
+# Cache larga: los nombres de archivo son únicos, así que nunca se pisan.
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/png  "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType video/mp4  "access plus 1 month"
+</IfModule>

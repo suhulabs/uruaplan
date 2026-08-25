@@ -1,0 +1,62 @@
+# ===========================================================================
+#  URUAPLAN — .htaccess de la RAÍZ del sitio (public_html)
+# ===========================================================================
+#  ⚠ Si tu hosting YA tiene un .htaccess en public_html, NO lo sustituyas:
+#    copia solo las líneas que te falten dentro del que ya existe.
+# ===========================================================================
+
+# --- 1. Que la página que se sirve sea index.php, no el index.html viejo ---
+#     Esto es lo que hace que uruaplan.com muestre la versión que lee el JSON.
+DirectoryIndex index.php index.html
+
+# --- 2. No listar el contenido de las carpetas ---
+Options -Indexes
+
+# --- 3. Nada de archivos sensibles servidos por HTTP ---
+<FilesMatch "^\.|\.(json|md|bak|log|sql|gz|ini|sh|old|tmp|docx|zip)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# --- 4. Cabeceras de seguridad básicas ---
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Permissions Policy (Desactiva cámara/micrófono y limita geolocalización al origen)
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(self)"
+    
+    # HSTS (Obliga HTTPS por 1 año)
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    
+    # CSP (Solo permite contenido local y CDNs confiables de Google Fonts / FontAwesome / Blob)
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: blob:;"
+</IfModule>
+
+# --- 5. UTF-8 por defecto ---
+AddDefaultCharset UTF-8
+
+# --- 6. Compresión y caché de estáticos (opcional, mejora la velocidad) ---
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css              "access plus 7 days"
+    ExpiresByType application/javascript "access plus 7 days"
+    ExpiresByType image/jpeg            "access plus 30 days"
+    ExpiresByType image/png             "access plus 30 days"
+    ExpiresByType image/webp            "access plus 30 days"
+</IfModule>
+
+# --- 7. Redirección Forzada a HTTPS ---
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

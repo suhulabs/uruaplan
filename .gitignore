@@ -1,0 +1,23 @@
+# Archivos sensibles y credenciales locales
+cheve/data/secreto.json
+credenciales_uruaplan.php
+
+# Archivos subidos por usuarios en local
+img/uploads/*
+!img/uploads/.gitkeep
+!img/uploads/.htaccess
+
+# Directorio de construccion/despliegues y respaldos
+dist/
+respaldos/
+*.sql.gz
+
+# Entorno de desarrollo / IDEs / Logs
+.claude/
+.gemini/
+.idea/
+.vscode/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
