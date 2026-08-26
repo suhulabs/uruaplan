@@ -1,0 +1,333 @@
+{
+    "como_funciona": {
+        "descripcion": "Descubrir qué hacer en Uruapan es muy fácil y rápido:",
+        "paso1_icono": "fa-solid fa-eye",
+        "paso1_texto": "Explora la cartelera y revisa los flyers publicados con las mejores opciones de eventos y lugares en la ciudad.",
+        "paso1_titulo": "Ve los Planes",
+        "paso2_icono": "fa-solid fa-heart",
+        "paso2_texto": "Selecciona el evento o plan que más se te antoje para salir hoy o este fin de semana.",
+        "paso2_titulo": "Elige Uno",
+        "paso3_icono": "fa-solid fa-address-book",
+        "paso3_texto": "En cada flyer vienen los datos de contacto directo del organizador o lugar (nosotros no damos información adicional sobre el evento).",
+        "paso3_titulo": "Contacta al Organizador",
+        "paso4_icono": "fa-solid fa-champagne-glasses",
+        "paso4_texto": "Llega al lugar con tus amigos y disfruta de la noche o del evento.",
+        "paso4_titulo": "¡Asiste y Disfruta!",
+        "subtitulo": "Simple y Directo",
+        "titulo": "¿Cómo Funciona Uruaplan?"
+    },
+    "contacto": {
+        "btn_enviar": "Enviar Evento a",
+        "correo_formulario": "contacto@uruaplan.com",
+        "descripcion": "Completa los datos de tu evento y observa en tiempo real la vista previa de tu flyer publicitario.",
+        "flyer_badge": "Vista Previa en Vivo del Flyer",
+        "flyer_contacto": "INFORMES Y ORGANIZACIÓN: @URUAPLAN_OFICIAL Y REDES SOCIALES",
+        "flyer_descripcion": "Gran evento y festival cultural abierto a todo el público en Uruapan, Michoacán. Disfruta de una jornada inolvidable llena de tradición, presentaciones musicales en vivo con reconocidas agrupaciones locales e invitadas, pabellón gastronómico tradicional, exposiciones artesanales, talleres interactivos y múltiples actividades pensadas para el disfrute de toda la familia.",
+        "flyer_fecha": "SÁBADO 00 DE MES",
+        "flyer_footer": "@URUAPLAN",
+        "flyer_hora": "00:00 PM",
+        "flyer_imagen": "img/fondoFlyer/gato.webp",
+        "flyer_precio": "ENTRADA LIBRE CON PREVIO REGISTRO / ACCESO GRATUITO",
+        "flyer_subtitulo": "PRESENTACIONES EN VIVO, PABELLÓN GASTRONÓMICO Y EXPOSICIÓN DE ARTE",
+        "flyer_titulo": "GRAN FESTIVAL CULTURAL, ARTÍSTICO Y CONCIERTO EN VIVO URUAPAN",
+        "flyer_ubicacion": "PLAZA MORELOS Y EXPLANADA DEL CENTRO HISTÓRICO, URUAPAN, MICHOACÁN",
+        "free_badge": "¡100% GRATIS!",
+        "free_texto": "Publicar tu evento no tiene ningún costo. Al enviar los datos, tu publicación pasa por una **revisión y aprobación previa** antes de compartirse en nuestra cartelera web y en nuestras redes de",
+        "nota_flyer": "*Nota: La vista previa es solo una representación visual de referencia y podría sufrir variaciones o ajustes al momento de ser publicada.*",
+        "nota_texto": "Todos los eventos son evaluados antes de su publicación. Nos reservamos el derecho de aprobar únicamente aquellos eventos que coincidan con nuestra filosofía y estándares de comunidad.",
+        "nota_titulo": "Nota de Moderación:",
+        "subtitulo": "Anuncia tu Evento",
+        "tarjeta1_label": "Correo Electrónico",
+        "tarjeta2_label": "WhatsApp Directo",
+        "tarjeta3_label": "Ubicación",
+        "titulo": "Publica tu Evento en Uruaplan"
+    },
+    "especializada": {
+        "badge": "Promoción Especializada",
+        "descripcion": "Pregunta por nuestros precios a través de nuestros canales oficiales y descubre cómo podemos impulsar tu marca, fiesta o evento en Uruapan.",
+        "mail_asunto": "Consulta de Precios - Promoción Especializada",
+        "mail_btn": "Cotizar por Correo",
+        "mail_cuerpo": "Hola equipo de Uruaplan, quisiera recibir información y precios para una promoción especializada.",
+        "mail_label": "Contacto por Correo Electrónico",
+        "titulo": "¿Quieres algo más personalizado?",
+        "wa_btn": "Preguntar Precios por WhatsApp",
+        "wa_label": "Atención Telefónica / WhatsApp",
+        "wa_mensaje": "Hola Uruaplan! Quisiera pedir información y precios para una promoción especializada."
+    },
+    "footer": {
+        "btn_cta": "Anuncia con Nosotros",
+        "cat_1": "Antros & Bares",
+        "cat_2": "Conciertos",
+        "cat_3": "Culturales",
+        "cat_4": "Terrazas",
+        "cat_5": "Gastronomía",
+        "cat_titulo": "Categorías",
+        "contacto_titulo": "Contacto",
+        "copyright": "Uruaplan. Todos los derechos reservados.",
+        "firma_marca": "SuhuLabs",
+        "firma_texto": "Desarrollado por",
+        "firma_url": "https://www.instagram.com/suhulabs/",
+        "hecho_con": "Hecho con {corazon} para Uruapan, Michoacán",
+        "nav_1": "Inicio",
+        "nav_2": "Nosotros",
+        "nav_3": "Cómo Funciona",
+        "nav_4": "Galería",
+        "nav_5": "Promociona tu Plan",
+        "nav_titulo": "Navegación",
+        "parrafo": "La plataforma líder para descubrir los mejores eventos, fiestas, conciertos y vida nocturna en Uruapan, Michoacán."
+    },
+    "galeria": {
+        "descripcion": "Antros, conciertos, terrazas, gastronomía y más — Uruapan tiene un plan para cada noche.",
+        "subtitulo": "Viví en Imágenes",
+        "titulo": "Una Probada de lo que te Espera",
+        "items": [
+            {
+                "alt": "Parques y naturaleza en Uruapan",
+                "archivo": "img/eventos/pieSierra.webp",
+                "etiqueta": "Parques & Naturaleza",
+                "pos_x": "50",
+                "pos_y": "50",
+                "visible": "1",
+                "zoom": "1"
+            },
+            {
+                "alt": "Fiestas y tradición en Uruapan",
+                "archivo": "img/eventos/IMG_0216.MP4",
+                "etiqueta": "Fiestas & Tradición",
+                "pos_x": "50",
+                "pos_y": "19.85",
+                "visible": "1",
+                "zoom": "1"
+            },
+            {
+                "alt": "Bosque Cupatitzio Uruapan",
+                "archivo": "img/eventos/bosque.webp",
+                "etiqueta": "Bosque Cupatitzio",
+                "pos_x": "50",
+                "pos_y": "50",
+                "visible": "1",
+                "zoom": "1"
+            },
+            {
+                "alt": "Antros y vida nocturna en Uruapan",
+                "archivo": "img/eventos/agora.webp",
+                "etiqueta": "Antros & Vida Nocturna",
+                "pos_x": "50",
+                "pos_y": "100",
+                "visible": "1",
+                "zoom": "1"
+            },
+            {
+                "alt": "Plazas y centro histórico de noche",
+                "archivo": "img/eventos/centro.webp",
+                "etiqueta": "Centro Histórico",
+                "pos_x": "50",
+                "pos_y": "50",
+                "visible": "1",
+                "zoom": "1"
+            },
+            {
+                "alt": "Cartelera y flyers de eventos Uruapan",
+                "archivo": "img/eventos/hotelplaza.webp",
+                "etiqueta": "Cartelera de Eventos",
+                "pos_x": "50",
+                "pos_y": "50",
+                "visible": "1",
+                "zoom": "1"
+            },
+            {
+                "alt": "Tradiciones y altares en Uruapan",
+                "archivo": "img/eventos/altar.webp",
+                "etiqueta": "Tradición & Altares",
+                "pos_x": "50",
+                "pos_y": "50",
+                "visible": "1",
+                "zoom": "1"
+            },
+            {
+                "alt": "Música y rock en vivo en Uruapan",
+                "archivo": "img/eventos/tocada.webp",
+                "etiqueta": "Música & Rock en Vivo",
+                "pos_x": "50",
+                "pos_y": "50",
+                "visible": "1",
+                "zoom": "1"
+            },
+            {
+                "alt": "Tocadas y shows de noche en Uruapan",
+                "archivo": "img/eventos/tocada2.webp",
+                "etiqueta": "Tocadas & Shows",
+                "pos_x": "50",
+                "pos_y": "50",
+                "visible": "1",
+                "zoom": "1"
+            },
+            {
+                "alt": "Cafés y gastronomía urbana en Uruapan",
+                "archivo": "img/eventos/cafe.webp",
+                "etiqueta": "Cafés & Gastronomía",
+                "pos_x": "50",
+                "pos_y": "50",
+                "visible": "1",
+                "zoom": "1"
+            },
+            {
+                "alt": "Bares y lounges nocturnos",
+                "archivo": "img/eventos/gastro.webp",
+                "etiqueta": "Bares & Lounges",
+                "pos_x": "50",
+                "pos_y": "50",
+                "visible": "1",
+                "zoom": "1"
+            },
+            {
+                "alt": "Terrazas y coctelería en Uruapan",
+                "archivo": "img/eventos/tacos.webp",
+                "etiqueta": "Terrazas & Coctelería",
+                "pos_x": "50",
+                "pos_y": "65.25",
+                "visible": "1",
+                "zoom": "1"
+            },
+            {
+                "alt": "Reuniones y eventos sociales en Uruapan",
+                "archivo": "img/eventos/almuerzo.webp",
+                "etiqueta": "Reuniones & Amigos",
+                "pos_x": "50",
+                "pos_y": "50",
+                "visible": "1",
+                "zoom": "1"
+            }
+        ]
+    },
+    "global": {
+        "correo": "contacto@uruaplan.com",
+        "instagram_handle": "@URUAPLAN",
+        "logo_emblema": "img/logos/logo.png",
+        "logo_header": "img/logos/logo_header.png",
+        "logo_promo": "img/logos/logo2.png",
+        "ubicacion_corta": "Uruapan, Michoacán",
+        "ubicacion_larga": "Uruapan, Michoacán, México",
+        "url_facebook": "https://instagram.com",
+        "url_instagram": "https://instagram.com",
+        "url_tiktok": "https://instagram.com",
+        "wa_mensaje_flotante": "Hola Uruaplan! Me gustaría solicitar información para promocionar un evento.",
+        "whatsapp_numero": "524521288171",
+        "whatsapp_visible": "+52 (452) 128 8171"
+    },
+    "hero": {
+        "btn1_icono": "fa-solid fa-compass",
+        "btn1_texto": "Explorar Planes",
+        "btn2_icono": "fa-solid fa-bullhorn",
+        "btn2_texto": "Promocionar mi Evento",
+        "subtitulo": "Descubre el lugar donde la tradición, la vida nocturna y la energía de los mejores eventos se encuentran. Entérate de qué hacer hoy en Uruapan.",
+        "titulo": "Uruapan, Corazón de",
+        "titulo_resaltado": "Michoacán",
+        "fondos": [
+            {
+                "imagen": "img/fondos/centro.webp",
+                "pos_x": "50",
+                "pos_y": "50",
+                "visible": "1",
+                "zoom": "1"
+            },
+            {
+                "imagen": "img/fondos/centro2.webp",
+                "pos_x": "50",
+                "pos_y": "50",
+                "visible": "1",
+                "zoom": "1"
+            },
+            {
+                "imagen": "img/fondos/teleferico.webp",
+                "pos_x": "50",
+                "pos_y": "50",
+                "visible": "1",
+                "zoom": "1"
+            },
+            {
+                "imagen": "img/fondos/uruapan1.webp",
+                "pos_x": "50",
+                "pos_y": "50",
+                "visible": "1",
+                "zoom": "1"
+            },
+            {
+                "imagen": "img/fondos/hoteljilton.webp",
+                "pos_x": "50",
+                "pos_y": "50",
+                "visible": "1",
+                "zoom": "1"
+            },
+            {
+                "imagen": "img/fondos/sams.webp",
+                "pos_x": "50",
+                "pos_y": "100",
+                "visible": "1",
+                "zoom": "1"
+            },
+            {
+                "imagen": "img/fondos/amanecer.webp",
+                "pos_x": "50",
+                "pos_y": "50",
+                "visible": "1",
+                "zoom": "1"
+            },
+            {
+                "imagen": "img/fondos/presa.webp",
+                "pos_x": "50",
+                "pos_y": "50",
+                "visible": "1",
+                "zoom": "1"
+            }
+        ]
+    },
+    "instagram": {
+        "badge": "Comunidad Uruaplan",
+        "badge_overlay": "@URUAPLAN",
+        "btn_texto": "Seguir y Etiquetar a @URUAPLAN",
+        "descripcion": "Si asistes a algún plan, tómate una foto o video, etiquétanos como {handle} en Instagram y te repostearemos en nuestras historias. ¡Sería de gran ayuda! 🔥",
+        "imagen_1": "img/instagram/historia.webp",
+        "imagen_2": "img/instagram/selfie.webp",
+        "titulo": "📸 ¡Te reposteamos en Instagram!"
+    },
+    "nav": {
+        "contacto": "Contacto",
+        "galeria": "Galería",
+        "inicio": "Inicio",
+        "nosotros": "Nosotros",
+        "promociona": "Promociona tu Plan"
+    },
+    "nosotros": {
+        "imagen": "img/logos/logo.png",
+        "parrafo_1": "Eventos culturales, festivales, tocadas en vivo, antros, bares y experiencias gastronómicas. Reunimos los mejores planes de la ciudad en un solo lugar.",
+        "parrafo_2": "Descubre qué hacer hoy, este finde o el próximo mes, y si organizas eventos, ponte frente a quienes andan buscando exactamente eso.",
+        "pilar1_icono": "fa-solid fa-store",
+        "pilar1_texto": "Promocionamos emprendimientos y negocios uruapenses.",
+        "pilar1_titulo": "Impulso Local",
+        "pilar2_icono": "fa-solid fa-calendar-check",
+        "pilar2_texto": "La cartelera de eventos más completa y actualizada.",
+        "pilar2_titulo": "Agenda al Día",
+        "subtitulo": "Conoce Uruaplan",
+        "titulo": "Tu ciudad, todos los planes."
+    },
+    "promociona": {
+        "btn_texto": "Solicitar Publicación de Evento",
+        "imagen": "img/logos/logo2.png",
+        "parrafo": "Llega directamente a miles de jóvenes y personas en Uruapan buscando qué hacer hoy. Aumenta tus asistencias, venta de boletos y consumo.",
+        "subtitulo": "¿Organizas Eventos o Tienes un Negocio?",
+        "titulo": "Promociona tu Plan con",
+        "titulo_resaltado": "Uruaplan",
+        "vineta_1": "Difusión en redes sociales y cartelera principal web",
+        "vineta_2": "Publicación 100% gratuita de tu evento",
+        "vineta_3": "Promociones más personalizadas a la medida de tu marca o fiesta"
+    },
+    "seo": {
+        "meta_description": "Descubre qué hacer en Uruapan, Michoacán: eventos culturales, antros, conciertos, fiestas, vida nocturna y mixología. Promociona tu evento con Uruaplan.",
+        "meta_keywords": "Uruapan, eventos Uruapan, antros Uruapan, qué hacer en Uruapan, vida nocturna Michoacán, conciertos Uruapan, cartelera Uruapan",
+        "og_description": "Encuentra los mejores eventos, antros, conciertos y planes en Uruapan, Michoacán.",
+        "og_image": "img/logos/logo.png",
+        "og_title": "Uruaplan | Tu Guía de Eventos en Uruapan",
+        "title": "Uruaplan | Los Mejores Planes, Eventos y Vida Nocturna en Uruapan"
+    }
+}

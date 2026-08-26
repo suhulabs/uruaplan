@@ -1,0 +1,17 @@
+# ===========================================================================
+#  BLOQUEO DE LA CARPETA includes/
+# ===========================================================================
+#  Estos archivos solo se incluyen desde otros scripts PHP; nadie debe poder
+#  abrirlos directamente desde el navegador.
+# ===========================================================================
+
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>
+
+Options -Indexes

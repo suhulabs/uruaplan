@@ -1,0 +1,36 @@
+# ===========================================================================
+#  BLOQUEO TOTAL DE LA CARPETA data/
+# ===========================================================================
+#  Aquí viven usuarios.json (con los hashes de las contraseñas) y
+#  contenido.json. PHP los lee desde el disco, así que NO necesitan ser
+#  accesibles por HTTP. Este archivo hace que cualquier intento de abrir
+#  uruaplan.com/cheve/data/usuarios.json devuelva 403 Prohibido.
+#
+#  IMPORTANTE: este archivo debe subirse junto con los .json. Si por lo que
+#  sea Apache lo ignorara, la carpeta quedaría expuesta.
+# ===========================================================================
+
+# --- Apache 2.4 (lo normal en cPanel actual) ---
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+
+# --- Apache 2.2 (hosting antiguo) ---
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>
+
+# --- Segunda barrera por extensión, por si la directiva global fallara ---
+<FilesMatch "\.(json|md|txt|bak|tmp|log)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Nunca listar el contenido de la carpeta.
+Options -Indexes

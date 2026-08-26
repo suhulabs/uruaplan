@@ -1,0 +1,10 @@
+# Las fotos de los flyers no se sirven nunca directamente.
+# El panel las enseña a través de cheve/flyer-imagen.php, que exige sesión,
+# y las publicadas se copian a img/uploads/. Aquí no entra nadie.
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>
