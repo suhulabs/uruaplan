@@ -1817,14 +1817,14 @@ a[href*="wa.me"] * {
   overflow: hidden;
 }
 
-/* Footer tag @URUAPLAN */
+/* Footer tag @URUAPLAN pegado SIEMPRE al fondo inferior del flyer */
 .flyer-footer {
-  margin-top: 0.3rem;
+  margin-top: auto !important;
   width: calc(100% + clamp(2.4rem, 10cqw, 4rem));
   margin-left: calc(-1 * clamp(1.2rem, 5cqw, 2rem));
   background: rgba(0, 0, 0, 0.88);
   border-top: 1px solid rgba(255, 255, 255, 0.15);
-  padding: clamp(0.3rem, 1.2cqw, 0.45rem) 0;
+  padding: clamp(0.35rem, 1.4cqw, 0.55rem) 0;
   text-align: center;
   border-radius: 0;
   box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.6);

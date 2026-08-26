@@ -266,17 +266,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  const flyerPreviewDescWrapper = document.getElementById('flyerPreviewDescWrapper');
   if (formDescription && flyerPreviewDesc) {
     formDescription.addEventListener('input', (e) => {
-      const val = e.target.value.trim();
-      if (val !== '') {
-        flyerPreviewDesc.textContent = val;
-        if (flyerPreviewDescWrapper) flyerPreviewDescWrapper.style.display = '';
-      } else {
-        flyerPreviewDesc.textContent = '';
-        if (flyerPreviewDescWrapper) flyerPreviewDescWrapper.style.display = 'none';
-      }
+      flyerPreviewDesc.textContent = e.target.value.trim() || FLYER_DEF.descripcion;
     });
   }
 

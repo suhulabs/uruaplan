@@ -872,11 +872,10 @@ $jsonJs = json_encode(
                 </div>
               </div>
 
-              <!-- Descripción con separador superior pegado (solo visible si se especifica texto) -->
-              <?php $descInicial = c('contacto', 'flyer_descripcion'); ?>
-              <div class="flyer-desc-wrapper" id="flyerPreviewDescWrapper" style="<?= $descInicial !== '' ? '' : 'display: none;' ?>">
+              <!-- Descripción del flyer de ejemplo -->
+              <div class="flyer-desc-wrapper" id="flyerPreviewDescWrapper">
                 <div class="flyer-divider"></div>
-                <p id="flyerPreviewDesc"><?= e($descInicial) ?></p>
+                <p id="flyerPreviewDesc"><?= ce('contacto', 'flyer_descripcion') ?></p>
               </div>
 
               <!-- Rejilla Inferior: Precio (izq) y Ubicación (der) -->
